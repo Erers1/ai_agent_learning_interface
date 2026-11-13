@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Tập AI Agent - Giảng Viên Ảo</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS tách riêng -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================================================ -->
+    <!-- PHẦN 1: HEADER & GIỚI THIỆU TRANG                            -->
+    <!-- ============================================================ -->
+    <header>
+        <div class="header-content">
+            <span class="badge">Trợ Lý Học Tập Thông Minh</span>
+            <!-- SỬA TÊN MÔN HỌC HOẶC TIÊU ĐỀ TẠI ĐÂY -->
+            <h1>Khám Phá Môn Học: AI Agent</h1>
+            <p>Không gian tự học cùng Giảng Viên AI ảo – tổng hợp kiến thức chuyên sâu, giải thích trực quan kèm bài tập
+                ôn luyện tức thì.</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Cột trái: Hướng dẫn, Nguồn học & Câu hỏi gợi ý -->
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+
+            <!-- Mục 1: Giới thiệu & Cách hỏi Agent -->
+            <section class="card">
+                <h2 class="card-title">
+                    <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    Giới Thiệu &amp; Cách Hỏi Giảng Viên
+                </h2>
+
+                <div class="guide-step">
+                    <div class="step-num">1</div>
+                    <p><strong>Mục đích trang web:</strong> Giúp bạn nắm vững kiến thức về AI Agent dựa trên nguồn học
+                        chuẩn xác, có sự hỗ trợ trực tiếp 24/7 từ Giảng viên AI.</p>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-num">2</div>
+                    <p><strong>Hỏi theo nhu cầu:</strong> Nhấp vào câu hỏi gợi ý hoặc tự gõ câu hỏi về định nghĩa, kiến
+                        trúc tác tử, so sánh phương pháp (ReAct, Plan-and-Solve) hay nhờ dịch thuật tài liệu.</p>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-num">3</div>
+                    <p><strong>Cấu trúc câu trả lời:</strong> Giảng viên AI trả lời theo 4 phần — <em>(1) Tóm tắt</em>
+                        &rarr; <em>(2) Giải thích + Ví dụ</em> &rarr; <em>(3) Trích dẫn nguồn</em> &rarr; <em>(4) Câu
+                            hỏi ôn tập</em>.</p>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- PHẦN 2: NGUỒN HỌC — THAY ĐỔI THÔNG TIN TẠI ĐÂY             -->
+            <!-- ============================================================ -->
+            <section class="card">
+                <h2 class="card-title">
+                    <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                        </path>
+                    </svg>
+                    Nguồn Học Tài Liệu Chính
+                </h2>
+
+                <div class="source-box">
+                    <!-- SỬA TÊN NGUỒN TẠI ĐÂY -->
+                    <div class="source-name">LLM Powered Autonomous Agents (Lilian Weng)</div>
+
+                    <!-- SỬA MÔ TẢ NGUỒN TẠI ĐÂY -->
+                    <p class="source-desc">
+                        Tài liệu học tập toàn diện về cấu trúc của AI Agent: Lập kế hoạch (Planning), Bộ nhớ (Memory:
+                        Short-term &amp; Long-term), Sử dụng công cụ (Tool Use) và các framework tác tử nổi tiếng.
+                    </p>
+
+                    <!-- SỬA ĐƯỜNG DẪN NGUỒN TẠI ĐÂY -->
+                    <a href="https://lilianweng.github.io/posts/2023-06-23-agent/" target="_blank"
+                        rel="noopener noreferrer" class="source-btn">
+                        <span>Truy cập trang nguồn gốc</span>
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="agent-spec-box">
+                    <strong>Cấu hình Giảng Viên AI:</strong>
+                    <ul>
+                        <li><strong>API:</strong> KamiMind — cấu hình trong <code>scripts.js</code> (phần
+                            <code>API_CONFIG</code>).
+                        </li>
+                        <li><strong>Nhiệm vụ:</strong> Viết văn, nghiên cứu phân tích và dịch thuật chuẩn xác.</li>
+                        <li><strong>Phản hồi:</strong> Tóm tắt &rarr; Giải thích + Ví dụ &rarr; Nguồn &rarr; Câu hỏi ôn
+                            tập.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- PHẦN 3: CÂU HỎI GỢI Ý — SỬA / BỔ SUNG CÂU HỎI TẠI ĐÂY    -->
+            <!-- Bấm vào câu hỏi để gửi thẳng vào chatbox                    -->
+            <!-- ============================================================ -->
+            <section class="card">
+                <h2 class="card-title">
+                    <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                        </path>
+                    </svg>
+                    Câu Hỏi Gợi Ý Về AI Agent
+                </h2>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+                    Nhấp vào câu hỏi bên dưới để gửi thẳng đến Giảng viên AI:
+                </p>
+
+                <div class="question-list">
+
+                    <div class="question-item"
+                        onclick="sendSuggestedQuestion('AI Agent là gì và điểm khác biệt cơ bản giữa AI Agent với mô hình ngôn ngữ lớn (LLM) thông thường?')">
+                        <span class="question-text">
+                            <span>1.</span> AI Agent là gì và khác biệt gì so với LLM thông thường?
+                        </span>
+                        <button class="send-icon-btn" type="button">Hỏi ngay ↗</button>
+                    </div>
+
+                    <div class="question-item"
+                        onclick="sendSuggestedQuestion('Hãy giải thích 3 thành phần cốt lõi của một Autonomous Agent: Planning, Memory và Tool Use?')">
+                        <span class="question-text">
+                            <span>2.</span> Trình bày 3 thành phần: Planning, Memory và Tool Use?
+                        </span>
+                        <button class="send-icon-btn" type="button">Hỏi ngay ↗</button>
+                    </div>
+
+                    <div class="question-item"
+                        onclick="sendSuggestedQuestion('Phương pháp ReAct (Reasoning + Acting) giúp AI Agent tư duy và hành động như thế nào? Cho một ví dụ cụ thể.')">
+                        <span class="question-text">
+                            <span>3.</span> ReAct (Reasoning + Acting) hoạt động ra sao? Cho ví dụ minh họa?
+                        </span>
+                        <button class="send-icon-btn" type="button">Hỏi ngay ↗</button>
+                    </div>
+
+                    <div class="question-item"
+                        onclick="sendSuggestedQuestion('Bộ nhớ dài hạn (Long-term Memory) của AI Agent được xây dựng như thế nào bằng Vector Database và RAG?')">
+                        <span class="question-text">
+                            <span>4.</span> Cách xây dựng Long-term Memory cho Agent qua Vector DB?
+                        </span>
+                        <button class="send-icon-btn" type="button">Hỏi ngay ↗</button>
+                    </div>
+
+                    <div class="question-item"
+                        onclick="sendSuggestedQuestion('Những thách thức và hạn chế lớn nhất hiện nay khi phát triển và vận hành hệ thống AI Agent là gì?')">
+                        <span class="question-text">
+                            <span>5.</span> Những thách thức lớn nhất khi triển khai AI Agent hiện nay?
+                        </span>
+                        <button class="send-icon-btn" type="button">Hỏi ngay ↗</button>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- PHẦN 4: CHATBOX GIẢNG VIÊN AI                                -->
+        <!-- Logic gọi API nằm trong scripts.js (hàm sendMessageToAgent) -->
+        <!-- ============================================================ -->
+        <div id="chat-panel">
+            <section class="card"
+                style="height: auto; display: flex; flex-direction: column; padding: 0; overflow: hidden;">
+
+                <div class="chat-wrapper">
+
+                    <!-- Thanh tiêu đề chatbox -->
+                    <div class="chat-header">
+                        <div class="avatar">🤖</div>
+                        <div class="chat-header-info">
+                            <strong>Giảng Viên AI — AI Agent</strong>
+                            <span>Trả lời bằng tiếng Việt · Trích dẫn nguồn rõ ràng</span>
+                        </div>
+                    </div>
+
+                    <!-- Vùng hiển thị tin nhắn -->
+                    <div class="chat-messages" id="chat-messages">
+                        <!-- Tin nhắn chào mừng mặc định của bot -->
+                        <div class="msg ai">
+                            <div class="msg-avatar">🤖</div>
+                            <div class="msg-bubble">
+                                Xin chào! Tôi là Giảng Viên AI chuyên về <strong>AI Agent</strong>. 👋<br><br>
+                                Hãy đặt câu hỏi về bất kỳ khía cạnh nào của AI Agent — từ kiến trúc, thuật toán cho đến
+                                ứng dụng thực tế. Tôi sẽ giải thích rõ ràng kèm ví dụ và trích dẫn nguồn tài
+                                liệu.<br><br>
+                                Bạn cũng có thể nhấp vào các <strong>câu hỏi gợi ý</strong> ở bên trái để bắt đầu! 👈
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thanh nhập tin nhắn -->
+                    <div class="chat-input-bar">
+                        <!-- Textarea hỗ trợ xuống dòng bằng Shift+Enter -->
+                        <textarea id="chat-input" placeholder="Nhập câu hỏi của bạn..." rows="1"></textarea>
+
+                        <!-- Nút gửi -->
+                        <button id="send-btn" title="Gửi tin nhắn">
+                            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- Toast thông báo chung -->
+    <div id="toast"></div>
+
+    <footer>
+        <p>© 2026 Trang Học Tập Môn AI Agent · Powered by KamiMind API</p>
+    </footer>
+
+    <!-- JS tách riêng — đặt cuối body để DOM đã sẵn sàng -->
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
